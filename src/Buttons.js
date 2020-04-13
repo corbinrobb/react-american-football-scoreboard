@@ -1,12 +1,12 @@
 import React from 'react';
 
-
 function Buttons(props) {
+
   const change = (name, points) => {
     if(name === 'home') {
-      props.setHomeScore(props[`${name}Score`] + points)
+      props.setHomeScore(props.homeScore + points)
     } else {
-      props.setAwayScore(props[`${name}Score`] + points)
+      props.setAwayScore(props.awayScore + points)
     }
   };
 
